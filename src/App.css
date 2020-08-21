@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.editor {
+    min-height: 60vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12pt;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.editor .ColRow {
+    text-align: right;
+    font-size: 10pt;
+    background-color: #263238;
+    color: #EEFFFF;
+    padding: 5px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.editor .CodeMirror {
+    min-height: 57vh;
 }
 
-.App-link {
-  color: #61dafb;
+.consola {
+    max-height: 32vh;
+    font-size: 16pt;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.consola .CodeMirror {
+    max-height: 32vh;
+}
+
+.reportes {
+    max-height: 53vh;
+    overflow: auto;
+    padding: 10px 0;
 }
